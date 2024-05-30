@@ -288,6 +288,7 @@ main {
 
 .experience .experience__card:last-child {
     border-left: none !important;
+    padding-bottom: 0;
 }
 
 .experience__card::before {
