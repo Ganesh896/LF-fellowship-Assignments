@@ -1,0 +1,231 @@
+:root {
+    /* colors */
+    --light-background: #f7f9fc;
+    --white: #fff;
+    --black: #2e2e48;
+    --blue: #516cf7;
+    --voilet: #9251f7;
+    --light-black: #47516b;
+    --gray: #79819a;
+    --text-gradient: -webkit-linear-gradient(90deg, #a478e8 0%, #516cf7 100%);
+
+    /* typography */
+    --large-title: 2.02rem;
+    --title: 1.515rem;
+    --subtitle: 1.1362rem;
+    --small-title: 1.01rem;
+    --normal-font: 0.8838rem;
+    --meta-text: 0.7575rem;
+    --small-font: 0.6312rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    background: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--black);
+}
+
+.container {
+    margin: 4rem 2rem;
+    padding-left: 18px;
+}
+
+.container__sidebar {
+    margin: 2rem 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2e6ee;
+}
+
+p,
+span {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.large__title {
+    font-size: var(--large-title);
+    font-family: "Outfit", sans-serif;
+}
+
+.section__title .title {
+    font-size: var(--title);
+    color: var(--black);
+    font-family: "Outfit", sans-serif;
+}
+
+.gradient__title {
+    font-size: var(--title);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: var(--subtitle);
+    color: var(--light-black);
+}
+
+.small__title {
+    font-size: var(--small-title);
+}
+
+.meta__text--large {
+    font-size: var(--meta-text);
+}
+
+.meta__text--small {
+    font-size: var(--small-font);
+}
+
+main {
+    display: flex;
+}
+
+/* sidebar */
+.sidebar {
+    position: sticky;
+    top: 0;
+    background: var(--light-background);
+    width: 356px;
+    padding-bottom: 2rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--light-black);
+    font-size: var(--normal-font);
+    font-weight: 600;
+}
+
+.sidebar .meta__text--large {
+    margin-bottom: 0.25rem;
+}
+
+.sidebar__section--header h6 {
+    font-size: var(--meta-text);
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.sidebar__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar__content h6 {
+    font-size: var(--normal-font);
+    color: var(--light-black);
+}
+
+.sidebar__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* sidebar profile */
+.sidebar .profile__content {
+    margin: 0 3rem;
+    padding-top: 2rem;
+    /* border-bottom: 2px solid #e2e6ee; */
+}
+
+/* .profile__description {
+} */
+
+.profile__description {
+    /* margin-left: 1.25rem; */
+    position: relative;
+}
+
+.profile__description p {
+    margin-left: 1.25rem;
+}
+
+.profile__description::before {
+    position: absolute;
+    content: url("/assets/images/icons/quote-left.png");
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.profile__description::after {
+    position: absolute;
+    content: url("/assets/images/icons/quote-right.png");
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top: 30px;
+}
+
+.profile__content .meta__text--large {
+    margin-top: 0.25rem;
+}
+
+.profile .profile__image img {
+    width: 100%;
+}
+
+.profile h4 {
+    margin: 0.5rem 0 2rem 0;
+}
+
+/* sidebar contact */
+
+/* sidebar languages */
+.sidebar .language .meta__text--large {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+/* ============ MAIN ================ */
+
+.container .container__content li {
+    list-style: none;
+    border-left: 2px solid #e2e6ee;
+    padding: 0 0 50px 30px;
+    position: relative;
+}
+
+.container .container__content li:last-child {
+    border-left: 0;
+}
+
+.container .container__content li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 12px solid var(--white);
+    border-radius: 50%;
+    background: #5531a7;
+    height: 8px;
+    width: 8px;
+    box-shadow: 0px 2.02px 8.08px 0px #0000000d;
+
+    transition: all 500ms ease-in-out;
+}
+
+.item-title {
+    color: #fff;
+}
