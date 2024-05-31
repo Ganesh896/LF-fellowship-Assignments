@@ -116,7 +116,7 @@ main {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     max-width: 356px;
     background: var(--light-background);
     padding-bottom: 2rem;
@@ -173,7 +173,7 @@ main {
 
 .profile__description::before {
     position: absolute;
-    content: url("/assets/images/icons/quote-left.png");
+    content: url("./assets/images/icons/quote-left.png");
     width: 100%;
     height: 100%;
     left: 0;
@@ -182,7 +182,7 @@ main {
 
 .profile__description::after {
     position: absolute;
-    content: url("/assets/images/icons/quote-right.png");
+    content: url("./assets/images/icons/quote-right.png");
     width: 100%;
     height: 100%;
     left: 100%;
